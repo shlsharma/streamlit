@@ -32,3 +32,6 @@ st.text(f'Selected option is {occupation}')
 
 if st.button("Example Button"):
     st.error("You clicked it")
+
+st.sidebar.header('Heading of sidebar')
+st.sidebar.text('Text written by Sahil')
