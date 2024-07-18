@@ -3,6 +3,8 @@ import streamlit as st
 import numpy as np
 
 model_name = 'RF_Loan_model.joblib'
+file_url = "https://raw.githubusercontent.com/manifoldailearning/Complete-MLOps-BootCamp/main/Build-ML-App-Streamlit/RF_Loan_model.joblib"
+wget.download(file_url)
 model = joblib.load(model_name)
 
 def prediction(Gender, Married, Dependents, Education, SelfEmployed,
